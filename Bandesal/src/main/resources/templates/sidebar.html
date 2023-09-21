@@ -1,0 +1,31 @@
+<nav th:fragment="side_nav" class="col-md-2 d-none d-md-block bg-light sidebar">
+    <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" th:href="@{/home}">
+                    <span data-feather="home"></span>
+                    Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/readers}">
+                    <span data-feather="users"></span>
+                    Readers
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/blogs}">
+                    <span data-feather="file"></span>
+                    Blogs
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/blogsreader}">
+                    <span data-feather="file"></span>
+                    Readers por blog
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
